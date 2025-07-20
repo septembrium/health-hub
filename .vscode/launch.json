@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FastAPI (Poetry + Uvicorn)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "health_hub.main:app",
+                "--reload"
+            ],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Load FitNotes CSV",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/health_hub/scripts/load_fitnotes_csv.py",
+            "args": [
+                "${workspaceFolder}/health_hub/scripts/fitnotes.csv"
+            ],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Clean HealthHub Data",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/health_hub/scripts/clean_healthhub_data.py",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "health-hub"
+version = "0.1.0"
+description = "Minimal FastAPI project for tracking health statistics."
+authors = ["Bert Heymans <bert@heymans.org>"]
+readme = "README.md"
+packages = [{ include = "health_hub" }]
+
+[tool.poetry.dependencies]
+python = ">=3.13,<4.0"
+fastapi = "*"
+uvicorn = { extras = ["standard"], version = "*" }
+sqlalchemy = "*"
+alembic = "*"
+python-dotenv = "*"
+pydantic = "*"
+pandas = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

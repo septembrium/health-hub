@@ -1,4 +1,5 @@
 # CLAUDE.md
+# I experimenten with Claude Code, I'm not using it at the moment 07/09/2025
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
